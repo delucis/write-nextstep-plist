@@ -1,0 +1,43 @@
+{
+  "name": "write-nextstep-plist",
+  "version": "0.0.1",
+  "description": "Stringify and write a NeXTSTEP property list",
+  "license": "GPL-3.0",
+  "repository": "delucis/write-nextstep-plist",
+  "bugs": {
+    "url": "https://github.com/delucis/write-nextstep-plist/issues"
+  },
+  "homepage": "https://github.com/delucis/write-nextstep-plist#readme",
+  "author": {
+    "name": "Chris Swithinbank",
+    "email": "swithinbank@gmail.com",
+    "url": "http://chrisswithinbank.net/"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "write",
+    "plist",
+    "nextstep",
+    "file-format",
+    "stringify",
+    "file"
+  ],
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "tempfile": "^2.0.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "make-dir": "^1.2.0",
+    "nextstep-plist": "git+https://gitlab.com/delucis/nextstep-plist.git#delucis-patch",
+    "write-file-atomic": "^2.3.0"
+  }
+}
