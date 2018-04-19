@@ -1,6 +1,6 @@
 {
   "name": "write-nextstep-plist",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Stringify and write a NeXTSTEP property list",
   "license": "GPL-3.0",
   "repository": "delucis/write-nextstep-plist",
