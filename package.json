@@ -31,13 +31,13 @@
     "file"
   ],
   "devDependencies": {
-    "ava": "^0.25.0",
-    "tempfile": "^2.0.0"
+    "ava": "^2.1.0",
+    "tempfile": "^3.0.0"
   },
   "dependencies": {
-    "graceful-fs": "^4.1.11",
-    "make-dir": "^1.2.0",
+    "graceful-fs": "^4.1.15",
+    "make-dir": "^3.0.0",
     "nextstep-plist": "git+https://gitlab.com/delucis/nextstep-plist.git#delucis-patch",
-    "write-file-atomic": "^2.3.0"
+    "write-file-atomic": "^3.0.0"
   }
 }
