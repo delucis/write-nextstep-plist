@@ -25,21 +25,21 @@ const INIT = (fn, fp, data, opts) => {
 const MAIN = (fp, data, opts) => {
   const PLIST = STRINGIFY(data)
 
-  return PIFY(WRITE_ATOMIC)(fp, `${PLIST}\n`, {mode: opts.mode})
+  return PIFY(WRITE_ATOMIC)(fp, `${PLIST}\n`, { mode: opts.mode })
 }
 
 const MAIN_SYNC = (fp, data, opts) => {
   const PLIST = STRINGIFY(data)
 
-  return WRITE_ATOMIC.sync(fp, `${PLIST}\n`, {mode: opts.mode})
+  return WRITE_ATOMIC.sync(fp, `${PLIST}\n`, { mode: opts.mode })
 }
 
 module.exports = (fp, data, opts) => {
-  return MAKE_DIR(PATH.dirname(fp), {fs: FS})
+  return MAKE_DIR(PATH.dirname(fp), { fs: FS })
     .then(() => INIT(MAIN, fp, data, opts))
 }
 
 module.exports.sync = (fp, data, opts) => {
-  MAKE_DIR.sync(PATH.dirname(fp), {fs: FS})
+  MAKE_DIR.sync(PATH.dirname(fp), { fs: FS })
   INIT(MAIN_SYNC, fp, data, opts)
 }
