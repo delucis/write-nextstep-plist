@@ -1,4 +1,4 @@
-# write-nextstep-plist [![Build Status](https://travis-ci.org/delucis/write-nextstep-plist.svg?branch=master)](https://travis-ci.org/delucis/write-nextstep-plist)
+# write-nextstep-plist [![Build Status](https://travis-ci.org/delucis/write-nextstep-plist.svg?branch=master)](https://travis-ci.org/delucis/write-nextstep-plist) [![Coverage Status](https://coveralls.io/repos/github/delucis/write-nextstep-plist/badge.svg?branch=master)](https://coveralls.io/github/delucis/write-nextstep-plist?branch=master)
 
 > Stringify and write a NeXTSTEP property list [atomically](https://github.com/npm/write-file-atomic)
 
